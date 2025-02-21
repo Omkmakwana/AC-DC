@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #070707;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ff0000;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #ff0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            margin: 2rem 0;
+            text-transform: uppercase;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .album-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 2px solid #ff0000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .album-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+        }
+
+        .album-art {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff0000;
+        }
+
+        .album-info {
+            padding: 1.5rem;
+        }
+
+        .album-title {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .album-year {
+            color: #ff0000;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .track-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-list li {
+            color: #ccc;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .listen-button {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .listen-button:hover {
+            background: #cc0000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AC/DC Music</h1>
+        <nav>
+            <a href="HOMEPAGE.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="tour.html">Tour</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Discography</h2>
+        <div class="album-grid">
+          
+            <div class="album-card">
+                <img src="https://i.scdn.co/image/ab67616d0000b27351c02a77d09dfcd53c8676d0" 
+                     alt="Highway to Hell" class="album-art">
+                <div class="album-info">
+                    <h3 class="album-title">Highway to Hell</h3>
+                    <p class="album-year">1979</p>
+                    <ul class="track-list">
+                        <li>Highway to Hell</li>
+                        <li>Girls Got Rhythm</li>
+                        <li>Walk All Over You</li>
+                        <li>Touch Too Much</li>
+                    </ul>
+                    <a href="https://open.spotify.com/album/10v912xgTZbjAtYfyKWJCS?si=XL6lobGfTOy7__JPqyNLVg" 
+                       class="listen-button" target="_blank">Listen Now</a>
+                </div>
+            </div>
+
+            
+            <div class="album-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ACDC_Back_in_Black.png/220px-ACDC_Back_in_Black.png" 
+                     alt="Back in Black" class="album-art">
+                <div class="album-info">
+                    <h3 class="album-title">Back in Black</h3>
+                    <p class="album-year">1980</p>
+                    <ul class="track-list">
+                        <li>Hells Bells</li>
+                        <li>Shoot to Thrill</li>
+                        <li>Back in Black</li>
+                        <li>You Shook Me All Night Long</li>
+                    </ul>
+                    <a href="https://open.spotify.com/album/6mUdeDZCsExyJLMdAfDuwh" 
+                       class="listen-button" target="_blank">Listen Now</a>
+                </div>
+            </div>
+
+           
+            <div class="album-card">
+                <img src="https://i.scdn.co/image/ab67616d0000b27305a19220d37bc871db939b64" 
+                     alt="Let There Be Rock" class="album-art">
+                <div class="album-info">
+                    <h3 class="album-title">Let There Be Rock</h3>
+                    <p class="album-year">1977</p>
+                    <ul class="track-list">
+                        <li>Let There Be Rock</li>
+                        <li>Problem Child</li>
+                        <li>Whole Lotta Rosie</li>
+                        <li>Hell Ain't a Bad Place to Be</li>
+                    </ul>
+                    <a href="https://open.spotify.com/album/3JwFNl80WWeXPiKEjIFbqa?si=YTjtIIpKQPqBXWf4Ke0_vA" 
+                       class="listen-button" target="_blank">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 AC/DC. All rights reserved :)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Official Website</title>
+    <style>
+        :root {
+            --primary-color: #FF0000;
+            --secondary-color: #000000;
+            --text-color: #FFFFFF;
+            --accent-color: #C0C0C0; 
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            font-family: 'Rock Salt', cursive; 
+        }
+
+        header {
+            background: var(--secondary-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url('https://shop.xounts.de/cdn/shop/files/AC-DC-Banner.jpg?v=1718355583&width=3840');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tour-dates {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .tour-date {
+            background: #222;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            transition: background 0.3s ease;
+        }
+
+        .tour-date:hover {
+            background: #333;
+        }
+
+        .gaana-player {
+            background: #222;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+ margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="download.jpg" alt="AC/DC Logo" class="logo" title="AC/DC Logo">
+            <div class="nav-links">
+                <a href="HOMEPAGE.html">Home</a>
+                <a href="bio.html">Bio</a>
+                <a href="tour.html">Tour</a>
+                <a href="music.html">Music</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>AC/DC</h1>
+            <p>High Voltage Rock 'n' Roll</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Latest Album: Power Up</h2>
+        <div class="gaana-player">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6mUdeDZCsExyJLMdAfDuwh?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" width="100%" height="380" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Upcoming Tour Dates</h2><br>
+        <div class="tour-dates">
+            <div class="tour-date">
+                <h3>November 01, 2025</h3>
+                <p>Vadodara Gujarat, India</p><br>
+                <h3>November 05, 2025</h3>
+                <p>Ahemdabad Gujarat, India</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="concert11.jpg" alt="Concert Photo 1">
+            <img src="1111.jpg" alt="Concert Photo 2">
+        </div>
+    </div>
+
+    <footer>
+        <div class="section">
+            <div class="social-links">
+                <a href="https://www.facebook.com/acdc/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com/acdc?mx=2" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/acdc/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 AC/DC. All rights reserved  :)</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</body>
+</html>

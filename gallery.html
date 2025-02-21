@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 100px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.6s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.8s; }
+        .gallery-item:nth-child(6) { animation-delay: 1s; }
+        .gallery-item:nth-child(7) { animation-delay: 1.2s; }
+        .gallery-item:nth-child(8) { animation-delay: 1.4s; }
+        .gallery-item:nth-child(9) { animation-delay: 1.6s; }
+        .gallery-item:nth-child(10) { animation-delay: 1.8s; }
+        .gallery-item:nth-child(11) { animation-delay: 2s; }
+        .gallery-item:nth-child(12) { animation-delay: 2.2s; }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background-color: #352121;
+            transition: transform 0.3s ease;
+        }
+
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AC/DC Gallery</h1>
+        <nav>
+            <a href="HOMEPAGE.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="tour.html">Tour</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <h2><center>Photos</center></h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://www.thesun.co.uk/wp-content/uploads/2024/02/lead-singer-brian-johnson-lead-878283708.jpg?strip=all&quality=100&w=1920&h=1080&crop=1"  alt="AC/DC Live Performance">
+            </div>
+            <div class="gallery-item">
+                <img src="https://c8.alamy.com/comp/B3K4P7/acdc-rock-group-with-angus-young-on-lead-guitar-B3K4P7.jpg" alt="Angus Young Guitar Solo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.mos.cms.futurecdn.net/2zCXFZcjeQBy78dw38MQgT-1200-80.jpg" alt="Band Group Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/25/b9/96/25b996a7a454417fc1bcdb73182acc20.jpg" alt="Concert Crowd">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqcSGgcvyDZiw_emiX0-RkzFIwHhkj1peZeA&s" alt="Stage Performance">
+            </div>
+            <div class="gallery-item">
+                <img src="https://c8.alamy.com/comp/WKDY26/acdc-performs-at-the-palladium-theater-in-nyc-in-august-1978-WKDY26.jpg" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://live.staticflickr.com/2579/3804551632_0e4204c3c5_k.jpg" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2020/10/10025-01E-JC-white_group_4559_sRGB.jpg" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://lastfm.freetls.fastly.net/i/u/ar0/d3f4e279a056464eb794710d8b4b69b7.jpg" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ytimg.com/vi/l7-bIFDMSFA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDOglQu7iet4IksGleZ5LxNkZ6Ztw" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/ac-dc-85-7ai-chris-deutsch.jpg" alt="Vintage AC/DC Photo">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.rockerrags.com/product_images/uploaded_images/axl-rose-singer-guns-roses-acdc-angus-young-guitarist.jpg" alt="Vintage AC/DC Photo">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 AC/DC. All rights reserved :)</p>
+    </footer>
+</body>
+</html>

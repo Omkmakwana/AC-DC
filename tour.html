@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Power Up Tour</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --acdc-red: #a3c000;
+            --acdc-yellow: #f50707;
+            --acdc-random: #f50707;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Bebas Neue', Arial, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid var(--acdc-red);
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--acdc-random);
+            text-shadow: 2px 2px var(--acdc-red);
+            margin: 0;
+            animation: flicker 2s infinite;
+        }
+
+        nav {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--acdc-random);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        nav a:hover {
+            border-color: var(--acdc-red);
+            background: rgba(242, 247, 0, 0.55);
+        }
+
+        .lightning-logo {
+            position: fixed;
+            width: 100px;
+            animation: spin 5s linear infinite;
+            opacity: 0.7;
+        }
+
+        main {
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tour-dates {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tour-dates li {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 5px solid var(--acdc-red);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tour-dates li:hover {
+            transform: translateX(20px);
+            background: rgba(255,0,0,0.1);
+        }
+
+        .tour-dates li::before {
+            content: '⚡';
+            position: absolute;
+            left: -30px;
+            transition: left 0.3s;
+        }
+
+        .tour-dates li:hover::before {
+            left: 10px;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        #lightning-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="lightning-canvas"></canvas>
+    
+    <header>
+        <h1>POWER UP TOUR</h1>
+        <nav>
+            <a href="HOMEPAGE.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="tour.html">Tour</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cG9seWdvbiBwb2ludHM9IjUwLDAgMTAwLDUwIDUwLDEwMCAwLDUwIiBmaWxsPSIjRkZCMDAwIi8+PC9zdmc+" 
+             class="lightning-logo" 
+             style="top:20px; left:20px;">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cG9seWdvbiBwb2ludHM9IjUwLDAgMTAwLDUwIDUwLDEwMCAwLDUwIiBmaWxsPSIjRkZCMDAwIi8+PC9zdmc+" 
+             class="lightning-logo" 
+             style="bottom:20px; right:20px;">
+    </header>
+
+    <main>
+        <h2 style="color: var(--acdc-random); text-align: center; font-size: 2.5rem;">NOVEMBER STORM IN GUJARAT</h2>
+        <ul class="tour-dates">
+            <li>November 1, 2025 - Vadodara Cricket Stadium, Vadodara</li>
+            <li>November 3, 2025 - Laxmi Vilas Palace Grounds, Vadodara</li>
+            <li>November 5, 2025 - Narendra Modi Stadium, Ahmedabad</li>
+            <li>November 8, 2025 - Sardar Vallabhbhai Patel Stadium, Ahmedabad</li>
+            <li>November 12, 2025 - Surat International Cricket Stadium, Surat</li>
+            <li>November 15, 2025 - Diamond City Arena, Surat</li>
+            <li>November 18, 2025 - Vadodara Rock Festival, Vadodara</li>
+            <li>November 22, 2025 - GMDC Grounds, Ahmedabad</li>
+            <li>November 25, 2025 - Sarthana Cricket Ground, Surat</li>
+            <li>November 28, 2025 - Vadodara Night Rockers, Vadodara</li>
+            <li>November 30, 2025 - Gujarat Mega Finale, Ahmedabad</li>
+        </ul>
+    </main>
+
+    <footer style="background: var(--acdc-random); padding: 1rem; text-align: center; margin-top: 3rem;">
+        <p style="margin: 0; font-size: 1.2rem; color: #000;">&copy; 2025 AC/DC. ALL RIGHTS RESERVED - FOR THOSE ABOUT TO ROCK, WE SALUTE YOU! 🤘</p>
+    </footer>
+
+    <script>
+       
+        const canvas = document.getElementById('lightning-canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function createLightning() {
+            ctx.strokeStyle = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            
+            let x = Math.random() * canvas.width;
+            let y = 0;
+            ctx.moveTo(x, y);
+
+            for(let i = 0; i < 20; i++) {
+                x += (Math.random() - 0.5) * 50;
+                y += canvas.height / 20;
+                ctx.lineTo(x, y);
+            }
+
+            ctx.stroke();
+            setTimeout(() => {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }, 50);
+        }
+
+        setInterval(createLightning, 1000);
+    </script>
+</body>
+</html>
